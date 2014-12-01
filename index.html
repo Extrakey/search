@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="return false;">
+            <input class="left" name="query" type="text" placeholder="Search..." autofocus required />
+            <input class="right" type="submit" value="Search" />
+        </form>
+
+        <div class="search-results">
+            <div>
+                <section class="left image-search">
+                    <h3>Image result</h3>
+                    <div class="content"></div>
+                </section>
+            </div>
+            <div>
+                <section class="right web-search">
+                    <h3>Web result</h3>
+                    <div class="content"></div>
+                    <div class="pager-container"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" data-main="js/main.js" src="lib/require.js"></script>
+</script>
+</body>
+</html>
